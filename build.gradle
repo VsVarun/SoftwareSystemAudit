@@ -1,0 +1,41 @@
+
+configurations {
+	provided
+}
+
+buildscript {
+	repositories {
+		mavenLocal()
+		mavenCentral()
+		maven { url "http://repo.spring.io/libs-release" }
+	}
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$SPRING_BOOT_VERSION")
+    }
+}
+apply plugin: "java"
+apply plugin: "eclipse-wtp"
+apply plugin: "spring-boot"
+	
+subprojects {
+	sourceCompatibility = 1.8  
+    targetCompatibility = 1.8  
+
+	apply plugin: "java"
+	apply plugin: "eclipse-wtp"
+	apply plugin: "spring-boot"
+		
+	repositories {
+		mavenLocal()
+		mavenCentral()
+		maven { url "http://repo.spring.io/libs-release" }
+	}
+	
+}
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	maven { url "http://repo.spring.io/libs-release" }
+}
+

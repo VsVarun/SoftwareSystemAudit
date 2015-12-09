@@ -1,0 +1,15 @@
+apply plugin: "war"
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:$SPRING_VERSION")
+    compile("org.springframework.boot:spring-boot-starter-mobile:$SPRING_VERSION")
+	
+    compile("org.springframework:spring-core:$SPRING_VERSION")
+    compile("org.springframework.data:spring-data-mongodb:$SPRING_MONGODB_VERSION")
+    compile("org.mongodb:mongo-java-driver:$MONGO_JAVA_DRIVER")
+    
+    compile("com.fasterxml.jackson.core:jackson-databind:$JACKSON_VERSION")
+    compile("com.google.guava:guava:$GUAVA_VERSION")
+    
+    providedCompile("javax.servlet:javax.servlet-api:3.0.1")
+}

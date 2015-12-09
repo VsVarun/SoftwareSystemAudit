@@ -1,0 +1,5 @@
+dependencies {
+    compile("org.springframework:spring-core:$SPRING_VERSION")
+    compile("org.springframework.data:spring-data-mongodb:$SPRING_MONGODB_VERSION")
+    compile("org.mongodb:mongo-java-driver:$MONGO_JAVA_DRIVER")
+}

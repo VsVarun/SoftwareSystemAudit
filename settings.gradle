@@ -1,0 +1,6 @@
+rootProject.name = "SoftwareSystemAudit"
+include ":model"
+include ":client"
+include ":service"
+include ":dao"
+include ":web"
